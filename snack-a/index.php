@@ -28,9 +28,11 @@ Olimpia Milano - Cantù | 55-60  -->
     ];
 
         
-    echo var_dump($partiteArray);
+    for ($i = 0; $i < count($partiteArray); $i++){
+        echo $partiteArray[$i]["squadra_1"].' - '.$partiteArray[$i]["squadra_2"].' | '.$partiteArray[$i]["punti_squadra_1"].'-'.$partiteArray[$i]["punti_squadra_2"];
+        echo "</br>";
+    };
         
-
 ?>
 </pre>
 
@@ -43,6 +45,6 @@ Olimpia Milano - Cantù | 55-60  -->
     <title>Snack A</title>
 </head>
 <body>
-    
+
 </body>
 </html>
