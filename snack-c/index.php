@@ -4,6 +4,17 @@ tenendo conto che l’array non dovrà contenere lo stesso numero più di una vo
 
 <?php
 
+    $numeriArray = [];
+
+    while(count($numeriArray) < 15){
+        $numeriRandom = rand(1,100);
+
+        if(!in_array($numeriRandom)){
+            $numeriArray[] = $numeriRandom;
+        };
+    };
+
+    var_dump ($numeriArray);
 ?>
 
 <!DOCTYPE html>
