@@ -4,7 +4,12 @@ Prendere il paragrafo e suddividerlo in tanti paragrafi.
 Ogni punto un nuovo paragrafo. -->
 
 <?php
-
+    $text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi iste libero rem omnis consequatur, 
+            dolore soluta adipisci ducimus impedit provident nam quam, natus sapiente odio reiciendis? Est, facere ex? Lorem ipsum, 
+            dolor sit amet consectetur adipisicing elit. Optio illum assumenda nihil nam sit ad, omnis culpa vel. deleniti tempore dicta 
+            earum ullam placeat vero atque nulla aliquam harum! Voluptates.";
+    
+    $newText = str_replace(".", "<br>", $text);
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +21,6 @@ Ogni punto un nuovo paragrafo. -->
     <title>Snack D</title>
 </head>
 <body>
-    
+    <p><?php echo $newText ?></p>
 </body>
 </html>
